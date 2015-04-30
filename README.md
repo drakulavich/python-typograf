@@ -6,4 +6,6 @@
 
 Чтобы установить, скачайте [ALS Typograf.alfredworkflow](https://github.com/voldmar/alfred-typograf/raw/master/ALS%20Typograf.alfredworkflow), импортируйте его в Alfred и назначьте горячие клавиши.
 
+Чтобы использовать буфер обмена, а не выделенный текст, в настройках горячих клавиш выберите «OS X Clipboard contents». Чтобы текст не вставлялся автоматически, в настройках последнего шага уберите галочку «Automatically paste to front most app»
+
 Использует «Типограф» Студии Артемия Лебедева: http://www.artlebedev.ru/tools/typograf/
