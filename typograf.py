@@ -36,6 +36,7 @@ def typograf(text):
     else:
         return text
 
+
 if __name__ == '__main__':
     print('clipboard type:', pyperclip._functions)
 
