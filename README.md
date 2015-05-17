@@ -29,7 +29,7 @@ pip install pyperclip requests
 
 В репозиториях пакет `python-pip` зачастую устаревший. Рекомендуется установить последнюю версию командой:
 ```
-easy_install -U pip
+sudo easy_install -U pip
 ```
 
 #### Windows
@@ -38,7 +38,7 @@ easy_install -U pip
 
 #### Работа с прокси
 
-Должна быть установлена переменная `http_proxy`. Для windows и linux соответственно:
+Убедитесь, что установлена переменная `http_proxy`. Для Windows и Linux соответственно:
 ```
 set http_proxy=your_proxy:port
 
