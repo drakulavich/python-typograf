@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 # encoding: utf-8
 
 import xml.etree.ElementTree as ET
@@ -9,6 +9,11 @@ SERVICE_URL = 'http://typograf.artlebedev.ru/webservices/'
 
 
 def typograf(text):
+    """
+    Sends text to typograf webservice.
+    Returns text with proper dashes, quotes and non-breaking spaces.
+    """
+
     template = """<?xml version="1.0" encoding="UTF-8"?>
     <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" \
     xmlns:xsd="http://www.w3.org/2001/XMLSchema" \
@@ -24,13 +29,13 @@ def typograf(text):
         </soap:Body>
     </soap:Envelope>"""
 
-    # convert chars to HTML-safe sequences
+    # convert chars into HTML-safe sequences
     text = text.replace('&', '&amp;')
     text = text.replace('<', '&lt;')
     text = text.replace('>', '&gt;')
 
     r = post('{url}typograf.asmx'.format(url=SERVICE_URL),
-             template.format(url=SERVICE_URL, text=text))
+             template.format(url=SERVICE_URL, text=text).encode('utf-8'))
 
     if r.status_code == 200:
         root = ET.fromstring(r.content)
@@ -45,8 +50,8 @@ def typograf(text):
 if __name__ == '__main__':
     print('clipboard type:', pyperclip._functions)
 
-    # get text from clipboard and convert to <str>
-    text = pyperclip.paste().encode('UTF-8')
+    # get text from clipboard
+    text = pyperclip.paste()
     # replace text in clipboard
     pyperclip.copy(typograf(text))
     pyperclip.paste()
