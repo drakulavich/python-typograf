@@ -31,10 +31,14 @@ pip install pyperclip requests
 ```
 sudo easy_install -U pip
 ```
+Для **Python 3** нет обвязки к gtk, в этом случае ставим `xclip`:
+```
+sudo apt-get install xclip
+```
 
 #### Windows
 
-[Скачиваем](https://www.python.org/downloads/windows/) и устанавливаем свежий релиз **Python 2**. В поставку, начиная с 2.7.9, включен `pip`.
+[Скачиваем](https://www.python.org/downloads/windows/) и устанавливаем свежий релиз. В поставку, начиная с 2.7.9 и 3.4.2, включен `pip`.
 
 #### Работа с прокси
 
