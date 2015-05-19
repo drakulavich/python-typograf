@@ -15,10 +15,10 @@ def typograf(text):
     """
 
     template = """<?xml version="1.0" encoding="UTF-8"?>
-    <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" \
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema" \
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">\n'
-    <soap:Body>'
+    <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
         <ProcessText xmlns="{url}">
             <text>{text}</text>
             <entityType>3</entityType>
@@ -26,7 +26,7 @@ def typograf(text):
             <useP>0</useP>
             <maxNobr>3</maxNobr>
         </ProcessText>
-        </soap:Body>
+    </soap:Body>
     </soap:Envelope>"""
 
     # convert chars into HTML-safe sequences

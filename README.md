@@ -38,7 +38,7 @@ sudo apt-get install xclip
 
 #### Windows
 
-[Скачиваем](https://www.python.org/downloads/windows/) и устанавливаем свежий релиз. В поставку, начиная с 2.7.9 и 3.4.2, включен `pip`.
+[Скачиваем](https://www.python.org/downloads/) и устанавливаем свежий релиз. В поставку, начиная с 2.7.9 и 3.4.2, включен [pip](https://en.wikipedia.org/wiki/Pip_%28package_manager%29).
 
 #### Работа с прокси
 
