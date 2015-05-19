@@ -27,10 +27,6 @@ pip install pyperclip requests
 
 #### Linux
 
-В репозиториях пакет `python-pip` зачастую устаревший. Рекомендуется установить последнюю версию командой:
-```
-easy_install --user -U pip
-```
 Для **Python 3** нет обвязки к gtk, в этом случае ставим `xclip`:
 ```
 sudo apt-get install xclip
