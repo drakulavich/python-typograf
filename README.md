@@ -1,5 +1,7 @@
 Превращает знаки дюйма (""), дефисы (-) и другие клавиатурные символы в кавычки («»), тире (—). Добавляет неразрывные пробелы.
 
+![пример работы](https://4.bp.blogspot.com/-f2aMGddQ01w/VXGTv6gzrII/AAAAAAAAcKg/P2t5Ty0Biy4/s1600/python-typograf-example.png "До и после преобразования")
+
 Использованы наработки проекта [alfred-typograf](https://github.com/voldmar/alfred-typograf) и [«Типограф»](http://www.artlebedev.ru/tools/typograf/) студии Артемия Лебедева.
 
 ## Использование
