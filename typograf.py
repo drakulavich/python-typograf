@@ -23,7 +23,7 @@ TEMPLATE = u"""<?xml version="1.0" encoding="UTF-8"?>
     </soap:Envelope>"""
 
 
-def get_htmlsafe(text):
+def get_htmlsafe_string(text):
     """ Returns HTML-safe string """
 
     text = text.replace('&', '&amp;')
@@ -36,7 +36,7 @@ def get_htmlsafe(text):
 def typograf(text):
     """ Returns text with russian typography """
 
-    src = get_htmlsafe(text)
+    src = get_htmlsafe_string(text)
     r = post('{url}typograf.asmx'.format(url=SERVICE_URL),
              TEMPLATE.format(url=SERVICE_URL, text=src)
              .encode('utf-8'))
